@@ -1,0 +1,264 @@
+Body{
+    background:linear-gradient(rgba(255, 255, 255, 0.221),#000000), url('../images/backgrund3.jpeg');
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/*--SideNav--*/
+
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #6d6860;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+    
+
+}
+nav ul li a{
+   text-decoration: none;
+   color: rgb(255, 255, 255);   
+}
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position:fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuBtn img{
+    width: 40px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #676060;
+}
+@media screen and (max-width: 770px){
+    .banner-text h1{
+        font-size: 44px; 
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+} 
+
+/*--formulär--*/
+
+.container{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 40%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+border: 0;
+margin: 10px 0;
+padding: 20px;
+outline: none;
+background: #f5f5f5;
+font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    background: #5b9dcd;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+
+}
+
+
+
+/*--footer--*/
+
+#footer{
+    padding: 100px 0 20px;
+    margin-top: 50px;
+    background: #efefef;
+    position:relative;
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin: 10px 0;
+}
+.footer-row p{
+    margin: 35px;
+}
+.telefon, .map, .mail{
+    color: rgb(200, 110, 50);
+    margin-left: 10px;
+}
+.clock{
+    color: rgb(200, 110, 50);
+    margin-right: 10px;
+    
+}
+.footer-img{
+    max-width:370px;
+    opacity: 0.1;
+    position: absolute;
+    left:50%;
+    top:35%;
+    transform:translate(-50%,-50%);
+    border-radius: 100%;
+}
+
+
+.title-text{
+    text-align: center;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+
+.title-text p{
+    margin:auto;
+    font-size: 20px;
+    color: #6d6860;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#6d6860,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.title-text h1{
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(46, 44, 44);
+}
+
+
+:root {
+    --lightgray: #efefef;
+    --blue: steelblue;
+    --white: #fff;
+    --black: rgba(0, 0, 0, 0.8);
+    --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+  }
+   
+  * {
+    padding: 0;
+    margin: 0;
+  }
+   
+  button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: inherit;
+  }
+  
+  /*modal*/
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: scale(0.5);
+}
+
+.modal-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.modal-btn {
+    width: 450px;
+    position: fixed;
+    top: 15%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+
+.border{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0.03);
+    border-bottom: 1px solid #ccc;
+}
+
+.body{
+    padding: 1px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        
+            <link rel="stylesheet" type="text/css" href="Styling/gallery.css">    
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <link href="https://fonts.googleapis.com/css?family=Kaushan+Scripts|Poppins&display=swap" rel="stylesheet">
+            
+            <meta name="description" content="Den här hemsidan är gjord för de som vill gå en frisörutbildning. Denna sida innehåller personalinfo(meetus) kontaktformulär(contact) galleri(gallery) service(services) hem(homepage) företaget heter true dream hair Academy ?">
+         
+            <meta name="keywords" content="HTML, CSS, javascript, Hair, man, woman, salon, salong, class,frisörutbildning ,  kurs, Beauty">
+         
+            <meta name="author" content="Vanessa Ibrahimsson, Isabelle Ibrahimssson, Marie Gaye">
+
+  
+    </head>
+    <body>   
+        <div>
+            <img src="images/11icons.png" alt="logo"> </div>
+            <div class="title-text"></div>
+
+        
+
+            
+
+            <!--Sidenav-->
+
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+              <li><a href="file:///C:/Users/sessa/OneDrive/Skrivbord/DreamAcademy/firstpage.html">HOME</a></li>  
+              <li><a href="file:///C:/Users/sessa/OneDrive/Skrivbord/DreamAcademy/gallery.html">GALLERY</a></li>  
+              <li><a href="file:///C:/Users/sessa/OneDrive/Skrivbord/DreamAcademy/services.html">SERVICES</a></li>  
+              <li><a href="file:///C:/Users/sessa/OneDrive/Skrivbord/DreamAcademy/contact.html">CONTACT</a></li>  
+              <li><a href="file:///C:/Users/sessa/OneDrive/Skrivbord/DreamAcademy/meetus.html">MEET US</a></li>  
+            </ul>
+        </nav>
+    </div>
+
+    <!--menubar-->
+    <div id="menuBtn">
+        <img src="images/menu.png" id="menu">
+    </div>
+
+
+    <!--gallery-->
+
+        <div class="container" id="container">
+            <img src="images/gallery1.jpeg" id="mainImg">
+            <button class="close" onclick="myFunction()">x</button>
+            <div class="gallerytitle"><p>Gallery</p></div>
+          </div>
+           <span class="thumb_img_list" type="button" name="answer" value="thumb_img_list" onclick="thumb_img_list()">
+               <ul> 
+                   <li><img src="images/gallery1.jpeg" alt="" id="thumb1" onclick="mark(this)"></li>
+                   <li><img src="images/gallery2.jpeg" alt="" id="thumb2" onclick="mark(this)"></li>
+                   <li><img src="images/gallery3.jpeg" alt="" id="thumb3" onclick="mark(this)"></li>
+                   <li><img src="images/gallery4.jpeg" alt="" id="thumb4" onclick="mark(this)"></li>
+                   <li><img src="images/gallery5.webp" alt="" id="thumb5" onclick="mark(this)"></li>
+               </ul>
+           
+           </span>
+
+           <!--footer-->
+        <section id="footer">
+            <img src="images/footerlogo.jpeg" class="footer-img">
+            <div class="title-text">
+                <p>kontakt</p>
+                <h1>True Dreams Academy</h1>
+            </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>Öppet-tider</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="clock" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      </svg>Måndag - Fredag - 09:00 - 17:30</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="clock" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      </svg>Lördag - Söndag - 10:00 - 14:00</p>
+            </div>
+            <div class="footer-right">
+                <h1>Kontakta oss</h1>
+                <p> stormarksvägen 55, 41545 Göteborg<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="map" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                <p>TrueDreams@Academy.com<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mail" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+                    <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
+                  </svg>
+                <p>+46 78909847<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="telefon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+            </div>
+
+        </div>
+        </section>
+
+
+
+           
+    </body>
+    <script src="JS/gallery.js"></script>
+</html>
